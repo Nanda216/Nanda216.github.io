@@ -1,10 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html style="height:100%; background-image: linear-gradient(225deg, rgb(153, 0, 255), rgb(255, 0, 221));;">
 <head>
     <title>Registration</title>
 </head>
 <body>
-    
-    
+    <style>
+        .main{
+            background-color: white;
+            width: 50%;
+            margin-left: 30%;
+            padding: 2%
+        }
+        .column{
+            padding:10px;
+            height: 400px
+        }
+    </style>
+    <div class="main">
+        <h2>Registration Form</h2>
+        <div style="display: flex;">
+            <div class="column left">
+                <form>
+                    <label>First Name</label><br>
+                    <input name="FName" type="text"><br><br>
+                    <label>Birthday</label><br>
+                    <input name="Date" type="date"><br><br>
+                    <label>Email</label><br>
+                    <input name="Email" type="email"><br><br>
+                    <label>Subject</label><br>
+                    <select name="Subject" id="sub"><br><br>
+                        <option value="select">--Choose Language--</option>
+                        <option value="Eng">English</option>
+                        <option value="Math">Mathematics</option>
+                        <option value="Phy">Physics</option>
+                        <option value="Chem">Chemistry</option>
+                        <option value="Bio">Biology</option>
+                        <option value="Soc">Social</option>
+                        <option value="Cse">CSE</option>
+                    </select>
+                    <input name="but" type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="column right">
+                <form>
+                    <label>Last Name</label><br>
+                    <input name="LName" type="text"><br><br>
+                    <label>Gender</label><br>
+                    <label><input name="Sex" type="radio" value="Male">Male</label>
+                    <label><input name="Sex" type="radio" value="Female">Female</label><br><br>
+                    <label>Phone Number</label><br>
+                    <input name="Ph" type="text"><br><br>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
