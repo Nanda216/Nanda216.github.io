@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html style="background-image: linear-gradient(rgb(53, 0, 175), rgb(89, 189, 255));">
+    <style>
+        input{
+            width:510px
+        }
+        .but{
+            color: white;
+            height:30px;
+            background-color: rgb(0, 136, 255);
+            border-color: transparent;
+        }
+        .but:hover{
+            background-color: rgb(0, 100, 255);
+        }
+    </style>
+    <div style="height:625px; text-align: center; color:white; padding-top: 40px;">
+        <head>
+            <Title>Contact</Title>
+            <p1 style="font-size: 60px; font-weight:lighter; font-family: Arial, Helvetica, sans-serif;">Contact Us</p1><br><br>
+        </head>
+        <body style="font-family: Arial, Helvetica, sans-serif; font-weight: lighter;">
+            <script>
+                function showAlert() {
+                alert("Message Sent");
+                }
+            </script>
+            <p1 style="font-size: large;"><br>Got a question? We'd love to hear from you.
+                Send us a message<br>and we'll respond as soon as possible</p1>
+            <div style="border:400px; margin-left:31% ; width:40%; padding-top: 50px; font-size: 15px; text-align: left;">
+                <form action="#" methods="get">
+                    <label for="fname" style="text-align: left;">Name*</label><br>
+                    <input style="height:30px" type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Email Address*</label><br>
+                    <input style="height:30px" type="text" id="lname" name="lname"><br><br>
+                    <label for="lname">Message</label><br>
+                    <textarea style="width: 510px; height:120px;" name="lname" id="lname" cols="30" rows="10"></textarea><br><br>
+                    <input style="height:30px" class="but" type="submit" value="Send Message" onclick="showAlert()">
+                </form>
+            </div>
+        </body>
+    </div>
+</html>
